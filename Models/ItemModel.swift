@@ -9,8 +9,8 @@ import Foundation
 
 struct ItemModel: Identifiable {
     var id: String = UUID().uuidString
-    var title: String
-    var isCompleted: Bool
+    let title: String
+    let isCompleted: Bool
     
     init(id: String = UUID().uuidString, title: String, isCompleted: Bool) {
         self.id = id
